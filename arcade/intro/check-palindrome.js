@@ -4,4 +4,9 @@ function checkPalindrome(str) {
     return reverse === str
 }
 
+function checkPalindrome(inputString) {
+    return inputString == inputString.split('').reverse().join('');
+}
+
+
 console.log(checkPalindrome('ddgdd'))
