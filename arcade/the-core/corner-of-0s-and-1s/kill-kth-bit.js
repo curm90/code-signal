@@ -11,7 +11,7 @@ function killKthBit(n, k) {
     binary[encrypted] = 0;
   }
 
-  // convert binary number back to digit
+  // convert binary number back to string
   let binaryStr = binary.join('');
   // return digit
   return parseInt(binaryStr, 2);
