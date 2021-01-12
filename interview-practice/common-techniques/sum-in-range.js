@@ -38,13 +38,11 @@ function sumInRange(nums, queries) {
   let mod = 1000000007; // 10^9 + 7
   let i;
 
-  frequencyDeltas;
   // For each range in `queries`
   for (i = 0; i < queries.length; i++) {
     frequencyDeltas[queries[i][0]]++; // Add 1 to the index of `frequencyDeltas` of the start of the range
     frequencyDeltas[queries[i][1] + 1]--; // Subtract 1 from the index of `frequencyDeltas` of the end of the range
   }
-  frequencyDeltas;
 
   // For each delta in `frequencyDeltas`
   for (i = 0; i < nums.length; i++) {
